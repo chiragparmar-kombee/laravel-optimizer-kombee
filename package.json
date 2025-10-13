@@ -1,0 +1,59 @@
+{
+  "name": "laravel-optimizer-kombee",
+  "displayName": "LaravelOptimizerKombee",
+  "description": "Optimize laravel sql queries and improve performance",
+  "version": "0.0.1",
+  "publisher": "laravel-optimizer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chiragparmar-kombee/laravel-optimizer-kombee.git"
+  },
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "laravelOptimizer.optimizeCode",
+        "title": "Laravel Optimizer: Optimize Laravel Code"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "when": "editorHasSelection && resourceExtname == .php",
+          "command": "laravelOptimizer.optimizeCode",
+          "group": "1_modification"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@types/vscode": "^1.74.0",
+    "@typescript-eslint/eslint-plugin": "^8.45.0",
+    "@typescript-eslint/parser": "^8.45.0",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.36.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@types/axios": "^0.14.4",
+    "axios": "^1.12.2"
+  }
+}

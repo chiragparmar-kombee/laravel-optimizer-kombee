@@ -2,7 +2,7 @@
 
 A VS Code extension that optimizes Laravel code using AI-powered suggestions. This extension helps developers improve their Laravel applications by providing intelligent code optimization recommendations.
 
-## Features
+## New Features
 
 - **AI-Powered Code Optimization**: Get intelligent suggestions to optimize your Laravel code
 - **Custom Instructions**: Provide specific optimization instructions (e.g., "reduce SQL queries", "improve performance")

@@ -54,7 +54,7 @@ async function activate(context) {
         }
         vscode.window.showInformationMessage("Optimizing code...");
         try {
-            const { data } = await axios_1.default.post('http://localhost:4000/optimize', { code, instruction });
+            const { data } = await axios_1.default.post('http://localhost:8000/optimize', { code, instruction });
             const optimizedCode = data.optimizedCode.trim();
             const doc = editor.document;
             const edit = new vscode.WorkspaceEdit();

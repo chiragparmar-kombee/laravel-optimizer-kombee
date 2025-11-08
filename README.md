@@ -11,9 +11,9 @@ A VS Code extension that optimizes Laravel code using AI-powered suggestions. Th
 
 ## Requirements
 
-- VS Code 1.74.0 or higher
+- VS Code 1.82.0 or higher
 - Node.js and npm installed
-- Laravel Optimizer AI server running on `http://localhost:4000`
+- Laravel Optimizer AI server running on `http://localhost:8000`
 
 ## Usage
 
